@@ -20,7 +20,7 @@ create table Lesson(
              updatedAt date
 );  
 insert into Lesson (homework_id, name, updatedAt) values(1,'Lesson_1 info', '2023-01-01'),
-										                (2,'Lesson_2 info', '2023-01-05'),
+						        (2,'Lesson_2 info', '2023-01-05'),
                                                         (3,'Lesson_3 info', '2023-01-10'),
                                                         (4,'Lesson_4 info', '2023-01-17');  
                                                         
@@ -34,7 +34,7 @@ insert into Lesson (homework_id, name, updatedAt) values(1,'Lesson_1 info', '202
                foreign key(lessons) references Lesson(id)
 );
 insert into Schedule(name, updatedAt, lessons) values('Schedule_1 info', '2023-01-01',9),
-										             ('Schedule_2 info', '2023-01-05',10),
+						     ('Schedule_2 info', '2023-01-05',10),
                                                      ('Schedule_3 info', '2023-01-10',11),
                                                      ('Schedule_4 info', '2023-01-17',12);  
                                                         
